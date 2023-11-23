@@ -1,0 +1,60 @@
+.touch {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__form-1 {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+  }
+
+  &__form-2 {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__form-3 {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    resize: vertical;
+    font-size: 14px;
+    padding: 14px 0px 14px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: var(--c-dark1);
+    color: var(--c-white);
+  }
+
+  input[type="email"] {
+    width: 100%;
+    resize: vertical;
+    font-size: 14px;
+    padding: 14px 0px 14px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: var(--c-dark1);
+    color: var(--c-white);
+  }
+
+  input[type="subject"],
+  textarea {
+    width: 100%;
+    resize: vertical;
+    font-size: 14px;
+    padding: 14px 0px 89px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: var(--c-dark1);
+    color: var(--c-white);
+  }
+}

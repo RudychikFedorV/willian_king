@@ -1,0 +1,82 @@
+.pricing {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 26px;
+    @include tablet {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+    }
+  }
+  &__item {
+    padding: 32px;
+    border-radius: 8px;
+    background: var(--c-dark2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  &__item-silver {
+    color: var(--c-white);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__item-price {
+    color: var(--c-white);
+    font-size: 44px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__item-desc {
+    color: var(--c-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  &__item-chk {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__chk-input {
+    display: none;
+  }
+  &__chk-input:checked ~ &__chk-check {
+    background: black;
+  }
+  &__chk-input:checked ~ &__chk-check::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  &__chk-check::before {
+    content: "\2713";
+    color: white;
+    transition: 0.2s all ease-in;
+    opacity: 0;
+    transform: scale(0);
+  }
+  &__chk-check {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #9b968b;
+    border-radius: 4px;
+    background: transparent;
+    transition: 0.2s all ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__chk-text {
+    color: #a19a8b;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

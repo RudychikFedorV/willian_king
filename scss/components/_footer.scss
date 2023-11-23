@@ -1,0 +1,22 @@
+.footer {
+  background: var(--c-dark2);
+  max-height: 126px;
+
+  &__row {
+    display: flex;
+    max-width: calc(1140px + 40px);
+    margin-inline: auto;
+    justify-content: space-between;
+    padding-top: 55px;
+    // flex-direction: column;
+    
+    
+  }
+  
+  &__row-name {
+  }
+  &__row-icons {
+    display: flex;
+    gap: 34px;
+  }
+}
