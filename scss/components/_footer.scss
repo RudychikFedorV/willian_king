@@ -1,22 +1,59 @@
 .footer {
   background: var(--c-dark2);
-  max-height: 126px;
+  padding-bottom: 55px;
 
   &__row {
     display: flex;
     max-width: calc(1140px + 40px);
+    width: 100%;
+    padding: 0 20px;
     margin-inline: auto;
     justify-content: space-between;
+    align-items: center;
     padding-top: 55px;
-    // flex-direction: column;
-    
-    
+
+    @include tablet {
+      padding-top: 55px;
+      gap: 20px;
+      flex-direction: column-reverse;
+    }
   }
-  
+
   &__row-name {
+    color: var(--c-white);
+    font-size: 16px;
+    font-weight: 400;
+    span {
+      color: var(--c-primary);
+      font-size: 16px;
+    }
+    @include tablet {
+      font-size: 12px;
+      span {
+        font-size: 12px;
+      }
+    }
   }
+
   &__row-icons {
     display: flex;
     gap: 34px;
+    @include tablet {
+      gap: 20px;
+    }
+  }
+
+  &__row-a {
+    color: var(--c-white);
+    font-size: 16px;
+    font-weight: 400;
+    transition: var(--transition);
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__row-a:hover {
+    color: var(--c-primary);
   }
 }

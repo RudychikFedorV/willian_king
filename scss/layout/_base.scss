@@ -36,6 +36,7 @@ section {
   border-radius: 5px;
   padding: 13px 18px;
   transition: var(--transition);
+  
 
   &_primary {
     background: var(--c-primary);
@@ -67,6 +68,7 @@ section {
 
   span {
     color: var(--c-primary);
+    font-size: 44px;
   }
 }
 
