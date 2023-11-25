@@ -1,55 +1,55 @@
 .footer {
   background: var(--c-dark2);
-  padding-bottom: 55px;
+  padding-bottom: 55rem;
 
   &__row {
     display: flex;
-    max-width: calc(1140px + 40px);
+    max-width: calc(1140rem + 40rem);
     width: 100%;
-    padding: 0 20px;
+    padding: 0 20rem;
     margin-inline: auto;
     justify-content: space-between;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 55rem;
 
     @include tablet {
-      padding-top: 55px;
-      gap: 20px;
+      padding-top: 55rem;
+      gap: 20rem;
       flex-direction: column-reverse;
     }
   }
 
   &__row-name {
     color: var(--c-white);
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
     span {
       color: var(--c-primary);
-      font-size: 16px;
+      font-size: 16rem;
     }
     @include tablet {
-      font-size: 12px;
+      font-size: 12rem;
       span {
-        font-size: 12px;
+        font-size: 12rem;
       }
     }
   }
 
   &__row-icons {
     display: flex;
-    gap: 34px;
+    gap: 34rem;
     @include tablet {
-      gap: 20px;
+      gap: 20rem;
     }
   }
 
   &__row-a {
     color: var(--c-white);
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
     transition: var(--transition);
     @include tablet {
-      font-size: 14px;
+      font-size: 14rem;
     }
   }
 

@@ -2,7 +2,7 @@
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 26px;
+    gap: 26rem;
     @include tablet {
       grid-template-columns: 1fr;
       
@@ -10,14 +10,19 @@
   }
 
   &__item {
-    padding: 32px;
-    border-radius: 8px;
+    padding: 32rem;
+    border-radius: 8rem;
     background: var(--c-dark2);
+    @include mobile {
+    display: flex;
+      flex-direction: column-reverse;
+      gap: 20rem;
+    }
   }
 
   &__item-container {
     display: flex;
-    gap: 20px;
+    gap: 20rem;
     @include mobile {
 		flex-direction: column;
 	}
@@ -25,26 +30,27 @@
 
   &__item-desc {
     color: var(--c-white);
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: 400;
+    line-height: 160%;
     align-self: stretch;
-    margin-bottom: 28px;
+    margin-bottom: 28rem;
   }
 
   &__item-title {
     color: var(--c-white);
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: 500;
     line-height: 160%;
     span {
-        font-size: 18px;
+        font-size: 18rem;
         color: var(--c-primary);
     }
   }
 
   &__item-img {
-    width: 71px;
-    height: 71px;
-    border-radius: 71px;
+    width: 71rem;
+    height: 71rem;
+    border-radius: 71rem;
   }
 }
